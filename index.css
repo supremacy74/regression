@@ -37,12 +37,16 @@ body {
 }
 
 .description__item {
-    max-width: 100%;
+    width: 100%;
+}
+
+.description__text {
+    max-width: 80%;
 }
 
 .arrow {
     position: absolute;
-    top: 50%;
+    top: 95%;
     transform: translateY(-50%);
     z-index: 15;
 }
@@ -145,10 +149,6 @@ body {
 
 .description__heading {
     margin-bottom: 15px;
-}
-
-.description__text {
-    max-width: 600px;
 }
 
 .danger__list {
@@ -307,7 +307,7 @@ body {
 .examples__image {
     position: absolute;
     left: 15px;
-    top: 50%;   
+    top: 50%;
     transform: translateY(-50%);
     width: 35px;
 }
@@ -336,7 +336,17 @@ body {
     background: #61A7DD;
 }
 
+@media (min-width: 576px) {
+    .description__text {
+        max-width: 600px;
+    }
+}
+
 @media (min-width: 768px) {
+
+    .arrow {
+        top: 50%;
+    }
 
     body {
         font-size: 20px;
